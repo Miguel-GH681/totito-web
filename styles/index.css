@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101b27;
+    height: 100vh;
+    color: white;
+}
+
+header {
+    background-color: #0c141d;
+    border-bottom: 1px solid #697888;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.celda {
+    background-color: #101b27;
+    border: 3px solid #697888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+}
+
+#reiniciar {
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-size: 1em;
+}
+
+#formatear {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 1em;
+}
+
+.hideBtn{
+    display: none;
+}
+
+#galery {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 210px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 10px;
+}
+
+.movement {
+    background-color: white;
+    border: 2px solid #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.movement p{
+    margin: 0;
+    padding: 0;
+    color: black
+}
+
+.acciones{
+    display: flex;
+    justify-content: center;
+}

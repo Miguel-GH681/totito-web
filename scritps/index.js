@@ -23,7 +23,7 @@ function handleCellClick(event) {
 }
 
 function checkWin(index, event) {
-    fetch('https://totito.onrender.com/add_movement', {
+    fetch('http://localhost:3000/add_movement', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -70,7 +70,7 @@ function checkWin(index, event) {
 }
 
 function resetGame() {
-    fetch('https://totito.onrender.com/reset_game')
+    fetch('http://localhost:3000/reset_game')
     .then(response => response.json())
     .then(data => {
         imagen.setAttribute('src', data['tree_url'])
@@ -88,7 +88,7 @@ function resetGame() {
 }
 
 function formatGame() {
-    fetch('https://totito.onrender.com/format_game')
+    fetch('http://localhost:3000/format_game')
     .then(response => response.json())
     .then(data => {
         imagen.setAttribute('src', data['tree_url'])
